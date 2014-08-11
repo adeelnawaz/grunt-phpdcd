@@ -1,0 +1,28 @@
+{
+  "name": "grunt-phpdcd",
+  "version": "0.1.0",
+  "description": "Grunt plugin for running PHP Dead Code Detector.",
+  "main": "tasks/phpdcd.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adeelnawaz/grunt-phpdcd.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "phpdcd",
+    "dead-code-detection",
+    "ci",
+    "continous-integration"
+  ],
+  "author": "Muhammad Adeel Nawaz",
+  "devDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/adeelnawaz/grunt-phpdcd/issues"
+  }
+}
