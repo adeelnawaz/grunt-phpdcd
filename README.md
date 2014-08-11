@@ -68,10 +68,10 @@ Default: `false`
 A comma-separated list of file names to exclude.
 
 #### exclude
-Type: `String`
+Type: `Array`
 Default: `false`
 
-A comma-separated string of patterns that are used to ignore directories.
+A list of directories where phpdcd should not search for files.
 
 #### recursive
 Type: `Boolean`
