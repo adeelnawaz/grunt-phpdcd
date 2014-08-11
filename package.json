@@ -24,5 +24,6 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/adeelnawaz/grunt-phpdcd/issues"
-  }
+  },
+  "private": true
 }
