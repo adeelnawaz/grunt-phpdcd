@@ -40,7 +40,7 @@ exports.init = (grunt) ->
     cmd += (config.exclude.map (exclude) -> " --exclude #{exclude}").join ' ' if config.exclude
     cmd += " --recursive" if config.recursive
     cmd += " --quiet" if config.quiet
-    cmd += " --verbose #{config.verbose}" if config.verbose
+    cmd += " -" + Array(config.verbose + 1).join "v" if config.verbose
     cmd += " --no-interaction" if config.noInteraction
     cmd
 
