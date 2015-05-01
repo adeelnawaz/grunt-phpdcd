@@ -30,6 +30,7 @@ exports.init = (grunt) ->
     ##3 for debug
     verbose: false
     noInteraction: true
+    reportFile: undefined
     maxBuffer: 200*1024
 
   buildCommand = (dirs) ->
@@ -57,7 +58,9 @@ exports.init = (grunt) ->
   exports.run = ->
     cmdOptions = maxBuffer: config.maxBuffer
     exec cmd, cmdOptions, (err, stdout, stderr) ->
-      grunt.log.write stdout if stdout
+      if config.reportFile
+        grunt.file.write(config.reportFile, stdout)
+      else grunt.log.write stdout if stdout
 
       # As documented on # http://phpmd.org/documentation/index.html#exit-codes
       grunt.fatal stdout if err and err.code isnt 2
