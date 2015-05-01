@@ -95,6 +95,12 @@ Increase the verbosity of messages.
 - 2 for more verbose output
 - 3 for debug
 
+#### reportFile
+Type: `String`
+Default: `undefined`
+
+Write result to file instead of stdout.
+
 #### maxBuffer
 Type: `Number`
 Default: `200*1024`
